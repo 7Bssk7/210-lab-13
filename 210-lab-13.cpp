@@ -47,7 +47,14 @@ void outputVector(vector<int> list){
     cout << (list.empty() == 0? "No" : "Yes") << endl;
 
     cout << "Did any of the students miss the exam?(someone recoeved grade of 0)" << endl;
+    cout << (found != list.end()? "Yes, unfortunately at least one of the students missed the exam." : "No, none of the students missed the exam.") << endl;
 
+    cout << "Sorted list of the grades from lowest to highest: " << endl;
+    sort(list.begin(), list.end());
+    for(int gr : list) cout << gr << " "; cout << endl;
 
+    cout << "Sorted list of the grades from highest to lowest: " << endl;
+    sort(list.rbegin(), list.rend());
+    for(int gr : list) cout << gr << " "; cout << endl;
 
 }
