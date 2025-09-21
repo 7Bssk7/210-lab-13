@@ -57,4 +57,6 @@ void outputVector(vector<int> list){
     sort(list.rbegin(), list.rend());
     for(int gr : list) cout << gr << " "; cout << endl;
 
+    cout << "Class average on the exam(nearest whole number): " << ((accumulate(list.begin(), list.end(), 0))/ list.size());
+
 }
