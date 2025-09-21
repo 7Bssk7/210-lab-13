@@ -5,6 +5,8 @@
 #include <numeric>
 using namespace std;
 
+const int MISSED_EXAM = 0;
+
 void outputVector(vector<int>);
 
 int main(){
@@ -14,7 +16,7 @@ int main(){
 
     if(inputFile.is_open()){
         while(inputFile >> temp){
-            grades.at(i) = temp;
+            grades.push_back(temp);
             ++i;
         }
     }
@@ -29,5 +31,9 @@ int main(){
 }
 
 void outputVector(vector<int> list){
-    
+    vector<int>::iterator found = find(list.begin(), list.end(), MISSED_EXAM);
+
+    cout << "CLASS 1241B" << "\n" << endl;
+    cout << "Number of students in the class: " << list.size() << endl;
+
 }
