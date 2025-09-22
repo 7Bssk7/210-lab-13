@@ -54,7 +54,7 @@ void outputVector(vector<int> list){
     cout << "Did the entire class miss the exam?" << endl;
     cout << (list.empty() == 0? "No" : "Yes") << endl;
     //Check if at least one student missed the exam and received grade of 0
-    cout << "Did any of the students miss the exam?(someone receшved grade of 0)" << endl;
+    cout << "Did any of the students miss the exam?(someone received grade of 0)" << endl;
     cout << (found != list.end()? "Yes, unfortunately at least one of the students missed the exam." : "No, none of the students missed the exam.") << endl;
     //Sort vector of grades from lowest to highest
     cout << "Sorted list of the grades from lowest to highest: " << endl;
